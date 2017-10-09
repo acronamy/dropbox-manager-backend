@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+@import './normalize.css';
+@import './skeleton.css';
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body{
+    background-color: #111;
+    color:#f1f1f1;
+}
+
+.container-fluid{
+    content: "";
+    display: table;
+    clear: both;
+    padding: 0 30px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+textarea,
+input{
+    color:#111;
+}
+

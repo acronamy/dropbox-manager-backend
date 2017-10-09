@@ -1,0 +1,36 @@
+$tree-width:475px;
+app-folder-tree{
+    position: absolute;
+    left: 0;
+    top:58px;
+    width:$tree-width;
+    height:calc(100vh - 58px);
+}
+
+.contents{
+    position: absolute;
+    right: 0;
+    top:58px;
+    width:calc(100% - 475px);
+    padding: 40px 30px;
+    box-sizing: border-box;
+    .collection{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(17, 17, 17, 0.8);
+        min-height:490px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        .preview{
+            background-color: #000;
+            flex: 1;
+        }
+        header{
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        footer{
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+    }
+    
+}

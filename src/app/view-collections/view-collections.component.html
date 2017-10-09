@@ -1,0 +1,21 @@
+<main class="container-fluid">
+  <app-folder-tree></app-folder-tree>
+  <div class='contents'>
+
+    <div class='collection collection-{{collection.id}}' *ngFor='let collection of collections'>
+      <h3>{{collection.name}}</h3>
+      <header>
+
+      </header>
+      <div class='preview'>
+        {{collection.contents}}
+      </div>
+      <footer>
+        <nav>
+          <p>Edit</p>
+          <p>Delete</p>
+        </nav>
+      </footer>
+    </div>
+  </div>
+</main>

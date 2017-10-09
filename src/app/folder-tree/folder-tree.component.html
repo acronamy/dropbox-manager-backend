@@ -1,0 +1,32 @@
+<aside>
+  <header>
+    <form>
+      <input type="text" placeholder="Collection name"/><button class='button-primary'>Add</button>
+    </form>
+  </header>
+
+  <section id='local-resources'>
+    <h5>Collections</h5>
+    <ul>
+      <li></li>
+    </ul>
+  </section>
+
+  <section id='dropbox-resources'>
+    <h5 class='label'>Dropbox <span>(read only)</span></h5>
+    <ul>
+      <li *ngFor='let dropboxFolder of dropboxContent'>
+        <div class='toggle'>
+          <div class="folder folder-dropbox"></div>
+          <h4>{{dropboxFolder.name}}</h4>
+        </div>
+        <div class='toggle-content'>
+          <ul>
+            <li>File</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+</aside>
